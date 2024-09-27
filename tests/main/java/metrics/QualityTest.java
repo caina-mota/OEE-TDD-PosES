@@ -46,4 +46,9 @@ public class QualityTest {
         assertThrows(IllegalArgumentException.class, () -> new Quality(-1, 1000));
         assertThrows(IllegalArgumentException.class, () -> new Quality(100, 1000));
     }
+
+    @Test
+    public void shouldThrowExceptionWhenProducedPartsIsZero() {
+        assertThrows(IllegalArgumentException.class, () -> new Quality(0, 0));
+    }
 }

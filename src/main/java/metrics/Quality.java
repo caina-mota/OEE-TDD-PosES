@@ -10,7 +10,7 @@ public class Quality {
 
     // Construtor
     public Quality(int producedParts, int rejectedParts) {
-        if (rejectedParts < 0 || rejectedParts > producedParts) {
+        if (producedParts == 0 || rejectedParts < 0 || rejectedParts > producedParts) {
             throw new IllegalArgumentException("Valores inválidos para peças produzidas e rejeitadas");
         }
 
