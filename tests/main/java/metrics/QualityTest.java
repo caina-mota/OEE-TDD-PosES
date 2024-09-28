@@ -30,7 +30,7 @@ public class QualityTest {
     }
 
     @Test
-    public void shoudThrowExceptionForInvalidGoodParts() {
+    public void shouldThrowExceptionForInvalidGoodParts() {
         int producedParts = 1000;
         int badParts = 300;
         Quality quality = new Quality(producedParts, badParts);
